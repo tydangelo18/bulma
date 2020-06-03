@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Bulma doesn't have it's own set of icons, so use fontawesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--Bulma CDN is easiest-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.css"
+    />
+    <title>Bulma Reference</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--Headings-->
+      <div class="block">
+        <h1 class="title">Hello World</h1>
+        <!--Must use classes to change the sizes of text-->
+        <!--Title makes font big-->
+        <h2 class="subtitle">Hello World</h2>
+        <!--Subtitle makes font a little smaller-->
+        <!--Sizes-->
+        <h1 class="title is-1">Hello World</h1>
+        <!--is-x is the way you can make font sized like headers in HTML-->
+        <h2 class="title is-2">Hello World</h2>
+        <!--Type of header doesn't matter because you have to use classes to size font-->
+        <h3 class="title is-3">Hello World</h3>
+        <h4 class="title is-4">Hello World</h4>
+        <h5 class="title is-5">Hello World</h5>
+        <h6 class="title is-6">Hello World</h6>
+      </div>
+
+      <!--Content-->
+      <div class="block">
+        <p class="content is-small">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste,
+          molestiae.
+        </p>
+        <!--content class gives padding to each tag-->
+        <p class="content is-medium">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste,
+          molestiae.
+        </p>
+        <!--is-size makes font size smaller or larger-->
+        <p class="content is-large">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste,
+          molestiae.
+        </p>
+      </div>
+
+      <!--Buttons-->
+      <div class="block">
+        <button class="button">Button</button>
+        <button class="button is-white">Button</button>
+        <!--is-shade/link formats the button style-->
+        <button class="button is-light">Button</button>
+        <button class="button is-dark">Button</button>
+        <button class="button is-black">Button</button>
+        <button class="button is-link">Button</button>
+      </div>
+      <div class="block">
+        <a href="" class="button is-primary">Primary</a>
+        <!--is-x for button style/color-->
+        <a href="" class="button is-info">Info</a>
+        <!--is-x for button style/color-->
+        <a href="" class="button is-success">Success</a>
+        <!--is-x for button style/color-->
+        <a href="" class="button is-warning">Warning</a>
+        <!--is-x for button style/color-->
+        <a href="" class="button is-danger">Danger</a>
+        <!--is-x for button style/color-->
+      </div>
+      <div class="block">
+        <a href="" class="button is-primary is-small">Primary</a>
+        <!--can size buttons too-->
+        <a href="" class="button is-info is-medium">Info</a>
+        <!--can size buttons too-->
+        <a href="" class="button is-success is large">Success</a>
+        <!--can size buttons too-->
+        <a href="" class="button is-warning is outlined">Warning</a>
+        <!--can size buttons too-->
+        <a href="" class="button is-danger is inverted">Danger</a>
+        <!--Inverts the default colors-->
+        <!--can size buttons too-->
+      </div>
+      <div class="block">
+        <a href="" class="button is-hovered">Hovered</a>
+        <a href="" class="button is-focused">Focused</a>
+        <a href="" class="button is-active">Active</a>
+        <a href="" class="button is-loading">Loading</a>
+        <a href="" class="button" disabled>Disabled</a>
+      </div>
+      <!--Box-->
+      <div class="block">
+        <!--Should maybe use these for the Cards in Springboard-->
+        <div class="box">
+          <h1 class="title">Hello World</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat,
+            saepe.
+          </p>
+        </div>
+      </div>
+
+      <!--Notifications-->
+      <div class="block">
+        <div class="notification">
+          <button class="delete"></button>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aperiam!
+        </div>
+        <div class="notification is-primary">
+          <button class="delete"></button>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aperiam!
+        </div>
+        <div class="notification is-info">
+          <button class="delete"></button>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aperiam!
+        </div>
+        <div class="notification is-success">
+          <button class="delete"></button>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aperiam!
+        </div>
+        <div class="notification is-warning">
+          <button class="delete"></button>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aperiam!
+        </div>
+        <div class="notification is-danger">
+          <button class="delete"></button>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At, aperiam!
+        </div>
+      </div>
+
+      <!--Tags-->
+      <div class="block">
+        <span class="tag">Hello</span>
+        <!--What is a span?-->
+        <span class="tag is-black">Black</span>
+        <span class="tag is-dark">Dark</span>
+        <span class="tag is-light">Light</span>
+        <span class="tag is-white">White</span>
+        <span class="tag is-primary">Primary</span>
+        <span class="tag is-info">Info</span>
+        <span class="tag is-success">Success</span>
+        <span class="tag is-warning is-medium">Warning</span>
+        <span class="tag is-danger is-large"
+          >Danger <button class="delete"></button
+        ></span>
+      </div>
+
+      <!--Messages-->
+      <div class="block">
+        <article class="message">
+          <div class="message-header">
+            <p>About Use</p>
+          </div>
+          <div class="message-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            accusantium.
+          </div>
+        </article>
+        <article class="message is-primary">
+          <div class="message-header">
+            <p>About Use</p>
+          </div>
+          <div class="message-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            accusantium.
+          </div>
+        </article>
+        <article class="message is-info">
+          <div class="message-header">
+            <p>About Use</p>
+          </div>
+          <div class="message-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            accusantium.
+          </div>
+        </article>
+        <article class="message is-success">
+          <div class="message-header">
+            <p>About Use</p>
+          </div>
+          <div class="message-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            accusantium.
+          </div>
+        </article>
+        <article class="message is-warning">
+          <div class="message-header">
+            <p>About Use</p>
+          </div>
+          <div class="message-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            accusantium.
+          </div>
+        </article>
+        <article class="message is-danger">
+          <div class="message-header">
+            <p>About Use</p>
+          </div>
+          <div class="message-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            accusantium.
+          </div>
+        </article>
+      </div>
+
+      <!--Navbar-->
+      <!--Nav-left, nav-center, nav-right-->
+      <!--all should be in nav-item-->
+      <!--Lookup navbar documentation on Bulma.io-->
+
+      <div class="block">
+        <nav class="nav">
+          <div class="nav-right">
+            <a href="" class="nav-item">
+              <h1 class="title is-4">Ty's Bulma</h1>
+            </a>
+          </div>
+
+          <div class="nav-right">
+            <a href="" class="nav-item">
+              <span class="icon">
+                <i class="fa fa-github"></i>
+                <!--fa are fontawesome tag names-->
+              </span>
+            </a>
+            <a href="" class="nav-item">
+              <span class="icon">
+                <i class="fa fa-twitter"></i>
+                <!--fa are fontawesome tag names-->
+              </span>
+            </a>
+          </div>
+
+          <div class="nav-right nav-menu">
+            <!--is-active will make it responsive-->
+            <a href="#" class="nav-item">Home</a>
+            <a href="#" class="nav-item">About</a>
+            <a href="#" class="nav-item">Contact</a>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Side bar menu-->
+      <div class="block">
+        <aside class="menu">
+          <p class="menu-label">
+            Label 1
+          </p>
+          <ul class="menu-list">
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 1</a></li>
+          </ul>
+          <p class="menu-label">
+            Label 2
+          </p>
+          <ul class="menu-list">
+            <li>
+              <a class="is-active" href="">Link 1</a>
+            </li>
+            <li><a href="">Link 1</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <!--Hero Banners-->
+      <div class="block">
+        <section class="hero is-primary">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title">Hero Title</h1>
+              <h2 class="subtitle">Hero Subtitle</h2>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--Cards-->
+      <!--Use for Springboard-->
+      <div class="block">
+        <div class="card">
+          <div class="card-content">
+            <p class="title">
+              Hello
+            </p>
+          </div>
+          <footer class="card-footer">
+            <p class="card-footer-item">
+              <span>
+                <a href="">View Details</a>
+              </span>
+            </p>
+          </footer>
+        </div>
+      </div>
+
+      <!--Pagination-->
+      <!--Like a back and forward button-->
+      <div class="block">
+        <nav class="pagination">
+          <a href="" class="pagination-previous" disabled>Previous</a>
+          <a href="" class="pagination-next">Next Page</a>
+          <ul class="pagination-list">
+            <li>
+              <a href="" class="pagination-link is-current">1</a>
+            </li>
+            <li>
+              <a href="" class="pagination-link">2</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!--Level Class: Helps with alignment-->
+      <div class="block">
+        <nav class="level">
+          <!--Left Side-->
+          <div class="level-left">
+            <p class="level-item">
+              <a><strong>All</strong></a>
+            </p>
+            <p class="level-item"><a>Published</a></p>
+            <p class="level-item"><a>Draft</a></p>
+            <p class="level-item"><a>Deleted</a></p>
+            <p class="level-item"><a class="button is-primary">New</a></p>
+          </div>
+
+          <!--Right Side-->
+          <div class="level-right">
+            <div class="level-item">
+              <div class="field">
+                <p class="control">
+                  <input type="text" class="input" placeholder="Search..." />
+                </p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!--Forms-->
+      <div class="block">
+        <form>
+          <div class="field">
+            <label class="label">Name</label>
+            <input type="text" class="input" placeholder="Enter Name" />
+          </div>
+        </form>
+      </div>
+      <!--Colored Form-->
+      <div class="block">
+        <form>
+          <!--Input-->
+          <!--Must be in a form tag-->
+          <div class="field">
+            <label class="label">Name</label>
+            <input
+              type="text"
+              class="input is-success"
+              placeholder="Enter Name"
+            />
+          </div>
+          <!--Dropdown-->
+          <!--Must be in a form tag-->
+          <div class="field">
+            <label class="label">Options</label>
+            <p class="control">
+              <span class="select">
+                <select>
+                  <option>Home</option>
+                  <option>About</option>
+                  <option>Contact</option>
+                  <option>Careers</option>
+                </select>
+              </span>
+            </p>
+          </div>
+
+          <!--Text Area-->
+          <!--Must be in a form tag-->
+          <div class="field">
+            <label class="label">Message</label>
+            <p class="control">
+              <textarea
+                class="textarea"
+                placeholder="Write a message"
+              ></textarea>
+            </p>
+          </div>
+        </form>
+      </div>
+
+      <!-- Attached Element-->
+      <div class="block">
+        <div class="field has-addons">
+          <p class="control">
+            <input type="text" class="input" placeholder="Enter Here..." />
+          </p>
+          <p class="control">
+            <a href="" class="button is-info">Search</a>
+          </p>
+        </div>
+      </div>
+
+      <!--Attached Element-->
+      <div class="block">
+        <div class="field has-addons">
+          <p class="control">
+            <span class="select">
+              <select>
+                <option>$</option>
+                <option>%</option>
+                <option>&</option>
+              </select>
+            </span>
+          </p>
+          <p class="control">
+            <input type="text" class="input" placeholder="Enter Amount..." />
+          </p>
+          <p class="control">
+            <a href="" class="button is-info">Pay</a>
+          </p>
+        </div>
+      </div>
+
+      <!--Tables-->
+      <div class="block">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Alba</th>
+              <th>Carmen</th>
+              <th>Mark</th>
+              <th>Samir</th>
+              <th>Ty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML/Bulma:Desktop</td>
+              <td>AJAX/Jquery</td>
+              <td>AJAX/Jquery</td>
+              <td>CSS: Desktop & Mobile</td>
+              <td>HTML/Bulma: Mobile</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table is-striped">
+          <thead>
+            <tr>
+              <th>Alba</th>
+              <th>Carmen</th>
+              <th>Mark</th>
+              <th>Samir</th>
+              <th>Ty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML/Bulma:Desktop</td>
+              <td>AJAX/Jquery</td>
+              <td>AJAX/Jquery</td>
+              <td>CSS: Desktop & Mobile</td>
+              <td>HTML/Bulma: Mobile</td>
+            </tr>
+            <tr>
+              <td>A</td>
+              <td>B</td>
+              <td>C</td>
+              <td>D</td>
+              <td>E</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table is-bordered">
+          <thead>
+            <tr>
+              <th>Alba</th>
+              <th>Carmen</th>
+              <th>Mark</th>
+              <th>Samir</th>
+              <th>Ty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML/Bulma:Desktop</td>
+              <td>AJAX/Jquery</td>
+              <td>AJAX/Jquery</td>
+              <td>CSS: Desktop & Mobile</td>
+              <td>HTML/Bulma: Mobile</td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table is-narrow">
+          <thead>
+            <tr>
+              <th>Alba</th>
+              <th>Carmen</th>
+              <th>Mark</th>
+              <th>Samir</th>
+              <th>Ty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML/Bulma:Desktop</td>
+              <td>AJAX/Jquery</td>
+              <td>AJAX/Jquery</td>
+              <td>CSS: Desktop & Mobile</td>
+              <td>HTML/Bulma: Mobile</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--Grid System-->
+
+      <div class="block">
+        <div class="columns">
+          <div class="column">
+            <!--Works like rows-->
+            <p class="notification">First Column</p>
+          </div>
+          <div class="column">
+            <!--Works like rows-->
+            <p class="notification">Second Column</p>
+          </div>
+          <div class="column">
+            <!--Works like rows-->
+            <p class="notification">Third Column</p>
+          </div>
+          <div class="column">
+            <!--Works like rows-->
+            <p class="notification">Fourth Column</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Different Sized Columns based on 12-->
+
+      <div class="block">
+        <div class="columns">
+          <div class="column is-2">
+            <!--Works like rows-->
+            <p class="notification">2 Column</p>
+          </div>
+          <div class="column is-8">
+            <!--Works like rows-->
+            <p class="notification">8 Column</p>
+          </div>
+          <div class="column is-2">
+            <!--Works like rows-->
+            <p class="notification">2 Column</p>
+          </div>
+        </div>
+      </div>
+
+      <!--Fraction-sized-->
+
+      <div class="block">
+        <div class="columns">
+          <div class="column is-three-quarters">
+            <!--Will take up 3/4 of the width of the page-->
+            <!--Works like rows-->
+            <p class="notification">3/4 Column</p>
+          </div>
+          <div class="column">
+            <!--Works like rows-->
+            <p class="notification">Auto-Sized Column</p>
+          </div>
+          <div class="column">
+            <!--Works like rows-->
+            <p class="notification">Auto-Sized Column</p>
+          </div>
+        </div>
+      </div>
+
+      <!--2/3 Sized-->
+
+      <div class="block">
+        <div class="columns">
+          <div class="column is-two-thirds">
+            <!--Will take up 2/3 of the width of the page-->
+            <!--Works like rows-->
+            <p class="notification">2/3 Column</p>
+          </div>
+          <div class="column">
+            <!--Works like rows-->
+            <p class="notification">Auto-Sized Column</p>
+          </div>
+          <div class="column">
+            <!--Works like rows-->
+            <p class="notification">Auto-Sized Column</p>
+          </div>
+        </div>
+      </div>
+
+      <!--1/2 Sized-->
+
+      <div class="block">
+        <div class="columns">
+          <div class="column is-half">
+            <!--Will take up 1/2 of the width of the page-->
+            <!--Works like rows-->
+            <p class="notification">1/2 Column</p>
+          </div>
+          <div class="column">
+            <!--Works like rows-->
+            <p class="notification">Auto-Sized Column</p>
+          </div>
+          <div class="column">
+            <!--Works like rows-->
+            <p class="notification">Auto-Sized Column</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 500px;"></div>
+  </body>
+</html>
